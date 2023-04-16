@@ -10,6 +10,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from transformers import AdamW
 from gensim.models.poincare import PoincareModel
+import geoopt as gt
 
 from utils.utils import (
     load_lookups,
@@ -77,7 +78,8 @@ if __name__ == "__main__":
     print(model)
 
     if not args.test_model:
-        optimizer = optim.Adam(model.parameters(), weight_decay=args.weight_decay, lr=args.lr)
+        #optimizer = optim.Adam(model.parameters(), weight_decay=args.weight_decay, lr=args.lr)
+        optimizer = gt.optim.RiemannianAdam(model.parameters(), lr=args.lr)
     else:
         optimizer = None
 
