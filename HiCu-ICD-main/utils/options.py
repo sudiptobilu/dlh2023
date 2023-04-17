@@ -43,7 +43,7 @@ parser.add_argument("--n_epochs", type=str, default="2,3")
 parser.add_argument("--depth", type=int, default=5)
 parser.add_argument("--dropout", type=float, default=0.2)
 parser.add_argument("--patience", type=int, default=10)
-parser.add_argument("--batch_size", type=int, default=16)
+parser.add_argument("--batch_size", type=int, default=1)
 parser.add_argument("--lr", type=float, default=1e-4)
 parser.add_argument("--weight_decay", type=float, default=0)
 parser.add_argument("--criterion", type=str, default='prec_at_8',
