@@ -422,7 +422,7 @@ class RACReader(nn.Module):
         super(RACReader, self).__init__()
 
         self.word_rep = WordRep(args, Y, dicts)
-        filter_size = int(args.filter_size)
+        filter_size = int(args.filter_size[0])
 
         self.conv = nn.ModuleList()
         for i in range(args.reader_conv_num):
