@@ -1,18 +1,19 @@
 # HiCu-ICD
-This repo contains code for our MLHC 2022 paper [HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding](https://arxiv.org/abs/2208.02301).
+This repo contains code for our HiCu DLH 2023 paper [HiCu: Leveraging Hierarchy for Curriculum Learning in Automated ICD Coding](https://arxiv.org/abs/2208.02301).
 
 Setup
 -----
 Install the following packages to run the code in this repository:
-* gensim==4.1.2
-* nltk==3.5
-* numpy==1.18.1
-* pandas==1.0.0
-* scikit_learn==1.1.1
-* scipy==1.4.1
-* torch==1.7.1
+* gensim==4.3.0
+* nltk==3.6.5
+* numpy==1.23.5
+* pandas==1.4.2
+* scikit_learn==1.2.0
+* scipy==1.10.0
+* torch==1.13.1
 * tqdm==4.62.3
-* transformers==4.5.1
+* transformers==4.26.1
+* geoopt==0.5.0
 
 ```bash
 pip install -r requirements.txt
@@ -20,7 +21,7 @@ pip install -r requirements.txt
 
 Data Preprocessing
 -----
-We use MIMIC-III for model training and evaluation. We use the same data preprocessing code as [MultiResCNN](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network). To set up the dataset, place the MIMIC-III files into `/data` as shown below:
+We use MIMIC-III for model training and evaluation. We use the same data preprocessing code as [MultiResCNN](https://github.com/wren93/HiCu-ICD). To set up the dataset, place the MIMIC-III files into `/data` as shown below:
 ```
 data
 |   D_ICD_DIAGNOSES.csv
@@ -43,12 +44,6 @@ After setting up the files, run the following command to preprocess the data:
 python preprocess_mimic3.py
 ```
 
-Training
------
-1. See files under `/runs` for training configs for MultiResCNN and RAC models.
-2. For LAAT (Bi-LSTM) models, switch to `LAAT` branch and use the training configs in the root folder.
-
 Acknowledgement
 -----
-A large portion of the code in this repository is borrowed from [foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network
-](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network). Thanks to their great work.
+A large portion of the code in this repository is borrowed from https://github.com/wren93/HiCu-ICD. Thanks to their great work.
