@@ -1,0 +1,1847 @@
+MultiResCNN:
+
+Total epochs at each level: [2, 3, 5, 10, 20]
+Training model at depth 0:
+EPOCH 0
+c:\Python\dlh\HiCu-ICD-main\utils\train_test.py:31: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  C:\cb\pytorch_1000000000000\work\torch\csrc\utils\tensor_new.cpp:210.)
+  inputs_id, labels = torch.LongTensor(inputs_id), torch.FloatTensor(labels[cur_depth])
+epoch finish in 488.69s, loss: 0.4117
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3002, 0.4620, 0.4010, 0.4293, 0.7227
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4667, 0.6737, 0.6031, 0.6364, 0.8357
+rec_at_5: 0.7307
+prec_at_5: 0.5718
+rec_at_8: 0.9006
+prec_at_8: 0.4495
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 54.63s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 1
+epoch finish in 474.82s, loss: 0.3490
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3742, 0.5231, 0.4906, 0.5063, 0.7412
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5041, 0.6990, 0.6438, 0.6703, 0.8552
+rec_at_5: 0.7510
+prec_at_5: 0.5865
+rec_at_8: 0.9077
+prec_at_8: 0.4545
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 57.51s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3968, 0.5435, 0.5119, 0.5272, 0.7471
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5210, 0.7128, 0.6594, 0.6850, 0.8582
+rec_at_5: 0.7491
+prec_at_5: 0.5954
+rec_at_8: 0.9039
+prec_at_8: 0.4615
+rec_at_15: 1.0000
+prec_at_15: 0.2974
+
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+Training model at depth 1:
+EPOCH 0
+epoch finish in 480.20s, loss: 0.2799
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.1816, 0.4117, 0.2293, 0.2945, 0.7004
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2391, 0.5667, 0.2926, 0.3859, 0.7956
+rec_at_5: 0.4533
+prec_at_5: 0.4568
+rec_at_8: 0.5803
+prec_at_8: 0.3783
+rec_at_15: 0.7747
+prec_at_15: 0.2773
+
+evaluation finish in 53.42s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 1
+epoch finish in 475.42s, loss: 0.2519
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2293, 0.4135, 0.2943, 0.3439, 0.7313
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2813, 0.6082, 0.3435, 0.4391, 0.8181
+rec_at_5: 0.4899
+prec_at_5: 0.4910
+rec_at_8: 0.6194
+prec_at_8: 0.4008
+rec_at_15: 0.7997
+prec_at_15: 0.2858
+
+evaluation finish in 59.31s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 2
+epoch finish in 478.98s, loss: 0.2352
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2429, 0.4293, 0.3282, 0.3720, 0.7305
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2826, 0.5351, 0.3746, 0.4407, 0.8116
+rec_at_5: 0.4782
+prec_at_5: 0.4816
+rec_at_8: 0.6141
+prec_at_8: 0.4003
+rec_at_15: 0.8056
+prec_at_15: 0.2883
+
+evaluation finish in 58.37s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2520, 0.4356, 0.3390, 0.3813, 0.7263
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2884, 0.5452, 0.3798, 0.4477, 0.8074
+rec_at_5: 0.4826
+prec_at_5: 0.4983
+rec_at_8: 0.6088
+prec_at_8: 0.4072
+rec_at_15: 0.7970
+prec_at_15: 0.2943
+
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+Training model at depth 2:
+EPOCH 0
+epoch finish in 477.47s, loss: 0.2311
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2439, 0.4509, 0.3097, 0.3672, 0.7539
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2900, 0.6279, 0.3502, 0.4496, 0.8264
+rec_at_5: 0.5135
+prec_at_5: 0.5050
+rec_at_8: 0.6445
+prec_at_8: 0.4137
+rec_at_15: 0.8179
+prec_at_15: 0.2912
+
+evaluation finish in 55.19s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 1
+epoch finish in 540.24s, loss: 0.2144
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2581, 0.4657, 0.3302, 0.3865, 0.7600
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3009, 0.6612, 0.3558, 0.4626, 0.8231
+rec_at_5: 0.5255
+prec_at_5: 0.5125
+rec_at_8: 0.6476
+prec_at_8: 0.4125
+rec_at_15: 0.8163
+prec_at_15: 0.2889
+
+evaluation finish in 86.13s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 2
+epoch finish in 537.98s, loss: 0.2013
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2765, 0.4388, 0.3679, 0.4002, 0.7533
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3242, 0.5767, 0.4254, 0.4896, 0.8270
+rec_at_5: 0.5152
+prec_at_5: 0.5151
+rec_at_8: 0.6392
+prec_at_8: 0.4148
+rec_at_15: 0.8123
+prec_at_15: 0.2918
+
+evaluation finish in 65.52s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 3
+epoch finish in 506.86s, loss: 0.1901
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2901, 0.4781, 0.3917, 0.4306, 0.7592
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3410, 0.5768, 0.4548, 0.5086, 0.8337
+rec_at_5: 0.5292
+prec_at_5: 0.5216
+rec_at_8: 0.6532
+prec_at_8: 0.4224
+rec_at_15: 0.8265
+prec_at_15: 0.2953
+
+evaluation finish in 68.41s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 4
+epoch finish in 571.57s, loss: 0.1787
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2787, 0.4464, 0.3734, 0.4067, 0.7539
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3160, 0.5836, 0.4079, 0.4802, 0.8233
+rec_at_5: 0.5088
+prec_at_5: 0.5054
+rec_at_8: 0.6403
+prec_at_8: 0.4142
+rec_at_15: 0.8113
+prec_at_15: 0.2903
+
+evaluation finish in 55.75s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2794, 0.4614, 0.3772, 0.4151, 0.7545
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3122, 0.5822, 0.4024, 0.4759, 0.8189
+rec_at_5: 0.5062
+prec_at_5: 0.5134
+rec_at_8: 0.6366
+prec_at_8: 0.4186
+rec_at_15: 0.8103
+prec_at_15: 0.2970
+
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+Training model at depth 3:
+EPOCH 0
+epoch finish in 474.71s, loss: 0.1853
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2820, 0.4631, 0.3693, 0.4109, 0.7663
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3004, 0.5327, 0.4079, 0.4620, 0.8274
+rec_at_5: 0.4698
+prec_at_5: 0.4910
+rec_at_8: 0.5987
+prec_at_8: 0.4034
+rec_at_15: 0.7720
+prec_at_15: 0.2860
+
+evaluation finish in 53.95s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 1
+epoch finish in 472.30s, loss: 0.1653
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2846, 0.4704, 0.3704, 0.4144, 0.7630
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3072, 0.5565, 0.4068, 0.4701, 0.8202
+rec_at_5: 0.4709
+prec_at_5: 0.4941
+rec_at_8: 0.5872
+prec_at_8: 0.4005
+rec_at_15: 0.7556
+prec_at_15: 0.2828
+
+evaluation finish in 54.45s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 2
+epoch finish in 462.84s, loss: 0.1537
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2974, 0.4793, 0.3950, 0.4331, 0.7724
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3178, 0.5315, 0.4414, 0.4823, 0.8306
+rec_at_5: 0.4795
+prec_at_5: 0.4956
+rec_at_8: 0.6066
+prec_at_8: 0.4067
+rec_at_15: 0.7796
+prec_at_15: 0.2903
+
+evaluation finish in 54.59s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 3
+epoch finish in 461.81s, loss: 0.1440
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2951, 0.4617, 0.3927, 0.4244, 0.7659
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3070, 0.5354, 0.4185, 0.4698, 0.8175
+rec_at_5: 0.4756
+prec_at_5: 0.4960
+rec_at_8: 0.5984
+prec_at_8: 0.4027
+rec_at_15: 0.7651
+prec_at_15: 0.2853
+
+evaluation finish in 53.54s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 4
+epoch finish in 467.69s, loss: 0.1345
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2918, 0.4991, 0.3753, 0.4284, 0.7709
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3110, 0.5629, 0.4100, 0.4744, 0.8268
+rec_at_5: 0.4876
+prec_at_5: 0.5021
+rec_at_8: 0.6122
+prec_at_8: 0.4110
+rec_at_15: 0.7794
+prec_at_15: 0.2893
+
+evaluation finish in 52.99s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 5
+epoch finish in 458.59s, loss: 0.1250
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2852, 0.4964, 0.3652, 0.4208, 0.7714
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3118, 0.5799, 0.4028, 0.4754, 0.8246
+rec_at_5: 0.4861
+prec_at_5: 0.5040
+rec_at_8: 0.6105
+prec_at_8: 0.4092
+rec_at_15: 0.7745
+prec_at_15: 0.2870
+
+evaluation finish in 57.56s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 6
+epoch finish in 465.37s, loss: 0.1176
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2858, 0.5021, 0.3643, 0.4223, 0.7652
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3067, 0.5768, 0.3957, 0.4694, 0.8106
+rec_at_5: 0.4787
+prec_at_5: 0.4975
+rec_at_8: 0.5969
+prec_at_8: 0.4028
+rec_at_15: 0.7591
+prec_at_15: 0.2823
+
+evaluation finish in 52.50s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 7
+epoch finish in 457.38s, loss: 0.1103
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2885, 0.4849, 0.3826, 0.4277, 0.7626
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3014, 0.5014, 0.4303, 0.4632, 0.8149
+rec_at_5: 0.4642
+prec_at_5: 0.4875
+rec_at_8: 0.5900
+prec_at_8: 0.4019
+rec_at_15: 0.7592
+prec_at_15: 0.2837
+
+evaluation finish in 53.72s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 8
+epoch finish in 461.09s, loss: 0.1020
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2876, 0.4907, 0.3719, 0.4231, 0.7648
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3035, 0.5514, 0.4030, 0.4657, 0.8120
+rec_at_5: 0.4714
+prec_at_5: 0.4929
+rec_at_8: 0.5903
+prec_at_8: 0.3989
+rec_at_15: 0.7573
+prec_at_15: 0.2819
+
+evaluation finish in 52.95s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 9
+epoch finish in 461.91s, loss: 0.0957
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2889, 0.4824, 0.3714, 0.4197, 0.7676
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3028, 0.5687, 0.3931, 0.4649, 0.8050
+rec_at_5: 0.4718
+prec_at_5: 0.4898
+rec_at_8: 0.5932
+prec_at_8: 0.3973
+rec_at_15: 0.7539
+prec_at_15: 0.2780
+
+evaluation finish in 53.03s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2865, 0.4783, 0.3715, 0.4182, 0.7643
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2972, 0.5634, 0.3862, 0.4583, 0.7962
+rec_at_5: 0.4639
+prec_at_5: 0.4907
+rec_at_8: 0.5781
+prec_at_8: 0.3968
+rec_at_15: 0.7407
+prec_at_15: 0.2810
+
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+Training model at depth 4:
+EPOCH 0
+epoch finish in 470.97s, loss: 0.1229
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2697, 0.4639, 0.3575, 0.4038, 0.7654
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2866, 0.5077, 0.3970, 0.4456, 0.8131
+rec_at_5: 0.4518
+prec_at_5: 0.4676
+rec_at_8: 0.5792
+prec_at_8: 0.3884
+rec_at_15: 0.7475
+prec_at_15: 0.2786
+
+evaluation finish in 55.26s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 1
+epoch finish in 459.70s, loss: 0.1041
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2691, 0.4686, 0.3486, 0.3998, 0.7659
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2887, 0.5345, 0.3858, 0.4481, 0.8088
+rec_at_5: 0.4585
+prec_at_5: 0.4740
+rec_at_8: 0.5852
+prec_at_8: 0.3902
+rec_at_15: 0.7424
+prec_at_15: 0.2761
+
+evaluation finish in 56.03s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 2
+epoch finish in 468.07s, loss: 0.0957
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2812, 0.4602, 0.3817, 0.4173, 0.7653
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2840, 0.4817, 0.4090, 0.4424, 0.7930
+rec_at_5: 0.4437
+prec_at_5: 0.4648
+rec_at_8: 0.5539
+prec_at_8: 0.3768
+rec_at_15: 0.7177
+prec_at_15: 0.2685
+
+evaluation finish in 55.15s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 3
+epoch finish in 468.23s, loss: 0.0880
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2768, 0.4643, 0.3664, 0.4096, 0.7668
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2860, 0.5044, 0.3978, 0.4448, 0.8089
+rec_at_5: 0.4519
+prec_at_5: 0.4702
+rec_at_8: 0.5751
+prec_at_8: 0.3853
+rec_at_15: 0.7460
+prec_at_15: 0.2779
+
+evaluation finish in 53.44s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 4
+epoch finish in 459.41s, loss: 0.0818
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2691, 0.4820, 0.3548, 0.4088, 0.7626
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2836, 0.5534, 0.3678, 0.4419, 0.7882
+rec_at_5: 0.4486
+prec_at_5: 0.4647
+rec_at_8: 0.5608
+prec_at_8: 0.3754
+rec_at_15: 0.7161
+prec_at_15: 0.2662
+
+evaluation finish in 52.95s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 5
+epoch finish in 462.80s, loss: 0.0764
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2765, 0.4748, 0.3628, 0.4113, 0.7631
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2891, 0.5227, 0.3928, 0.4485, 0.8016
+rec_at_5: 0.4550
+prec_at_5: 0.4699
+rec_at_8: 0.5724
+prec_at_8: 0.3831
+rec_at_15: 0.7330
+prec_at_15: 0.2736
+
+evaluation finish in 52.39s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 6
+epoch finish in 468.01s, loss: 0.0721
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2869, 0.4664, 0.3850, 0.4218, 0.7595
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2984, 0.4904, 0.4326, 0.4597, 0.8074
+rec_at_5: 0.4538
+prec_at_5: 0.4684
+rec_at_8: 0.5791
+prec_at_8: 0.3887
+rec_at_15: 0.7413
+prec_at_15: 0.2765
+
+evaluation finish in 52.50s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 7
+epoch finish in 470.60s, loss: 0.0669
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2742, 0.4833, 0.3524, 0.4076, 0.7646
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2856, 0.5614, 0.3677, 0.4443, 0.7886
+rec_at_5: 0.4590
+prec_at_5: 0.4730
+rec_at_8: 0.5713
+prec_at_8: 0.3819
+rec_at_15: 0.7221
+prec_at_15: 0.2684
+
+evaluation finish in 53.78s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 8
+epoch finish in 475.65s, loss: 0.0626
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2746, 0.4825, 0.3572, 0.4105, 0.7601
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2895, 0.5160, 0.3974, 0.4490, 0.7991
+rec_at_5: 0.4551
+prec_at_5: 0.4704
+rec_at_8: 0.5721
+prec_at_8: 0.3847
+rec_at_15: 0.7330
+prec_at_15: 0.2737
+
+evaluation finish in 53.27s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 9
+epoch finish in 471.47s, loss: 0.0591
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2871, 0.4657, 0.3887, 0.4237, 0.7611
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2955, 0.4879, 0.4284, 0.4562, 0.7983
+rec_at_5: 0.4557
+prec_at_5: 0.4729
+rec_at_8: 0.5672
+prec_at_8: 0.3849
+rec_at_15: 0.7209
+prec_at_15: 0.2721
+
+evaluation finish in 56.72s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 10
+epoch finish in 462.71s, loss: 0.0558
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2716, 0.4823, 0.3523, 0.4072, 0.7595
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2880, 0.5218, 0.3913, 0.4472, 0.7964
+rec_at_5: 0.4547
+prec_at_5: 0.4689
+rec_at_8: 0.5776
+prec_at_8: 0.3859
+rec_at_15: 0.7339
+prec_at_15: 0.2734
+
+evaluation finish in 53.71s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+EPOCH 11
+epoch finish in 473.14s, loss: 0.0525
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2751, 0.4691, 0.3618, 0.4085, 0.7587
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2914, 0.5017, 0.4101, 0.4513, 0.8012
+rec_at_5: 0.4424
+prec_at_5: 0.4628
+rec_at_8: 0.5708
+prec_at_8: 0.3849
+rec_at_15: 0.7356
+prec_at_15: 0.2761
+
+evaluation finish in 53.03s
+saved metrics, params, model to directory ./models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+prec_at_8 hasn't improved in 10 epochs, early stopping...
+loading pretrained embeddings from ./data/mimic3/processed_full_100.embed
+adding unk embedding
+single
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2691, 0.4686, 0.3486, 0.3998, 0.7659
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2887, 0.5345, 0.3858, 0.4481, 0.8088
+rec_at_5: 0.4585
+prec_at_5: 0.4740
+rec_at_8: 0.5852
+prec_at_8: 0.3902
+rec_at_15: 0.7424
+prec_at_15: 0.2761
+
+evaluation finish in 51.15s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2679, 0.4519, 0.3507, 0.3950, 0.7621
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2826, 0.5288, 0.3778, 0.4407, 0.8003
+rec_at_5: 0.4481
+prec_at_5: 0.4737
+rec_at_8: 0.5660
+prec_at_8: 0.3884
+rec_at_15: 0.7322
+prec_at_15: 0.2797
+
+saved metrics, params, model to directory c:\Python\dlh\HiCu-ICD-main\models\MultiResCNN_HierarchicalHyperbolic_Apr_18_01_34_04
+
+RAC:
+
+Total epochs at each level: [2, 3, 5, 10, 20]
+Training model at depth 0:
+EPOCH 0
+c:\Python\dlh\HiCu-ICD-main\utils\train_test.py:31: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  C:\cb\pytorch_1000000000000\work\torch\csrc\utils\tensor_new.cpp:210.)
+  inputs_id, labels = torch.LongTensor(inputs_id), torch.FloatTensor(labels[cur_depth])
+epoch finish in 619.47s, loss: 0.3961
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3292, 0.5144, 0.4142, 0.4589, 0.8233
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5307, 0.7627, 0.6357, 0.6934, 0.8810
+rec_at_5: 0.7703
+prec_at_5: 0.5978
+rec_at_8: 0.9227
+prec_at_8: 0.4611
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 72.00s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 1
+epoch finish in 613.66s, loss: 0.3231
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4831, 0.6249, 0.6314, 0.6281, 0.8714
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.6039, 0.7428, 0.7635, 0.7530, 0.9145
+rec_at_5: 0.8206
+prec_at_5: 0.6319
+rec_at_8: 0.9499
+prec_at_8: 0.4762
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 72.18s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4906, 0.6494, 0.6431, 0.6462, 0.8731
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.6035, 0.7432, 0.7625, 0.7527, 0.9131
+rec_at_5: 0.8144
+prec_at_5: 0.6377
+rec_at_8: 0.9456
+prec_at_8: 0.4818
+rec_at_15: 1.0000
+prec_at_15: 0.2974
+
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+Training model at depth 1:
+EPOCH 0
+epoch finish in 614.85s, loss: 0.2530
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3793, 0.5541, 0.5073, 0.5296, 0.8684
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4724, 0.6691, 0.6165, 0.6417, 0.9038
+rec_at_5: 0.6200
+prec_at_5: 0.6046
+rec_at_8: 0.7521
+prec_at_8: 0.4836
+rec_at_15: 0.8954
+prec_at_15: 0.3219
+
+evaluation finish in 81.36s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 1
+epoch finish in 623.82s, loss: 0.2151
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4662, 0.6214, 0.6377, 0.6295, 0.8991
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5288, 0.6726, 0.7121, 0.6918, 0.9265
+rec_at_5: 0.6594
+prec_at_5: 0.6375
+rec_at_8: 0.7968
+prec_at_8: 0.5134
+rec_at_15: 0.9276
+prec_at_15: 0.3353
+
+evaluation finish in 72.46s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 2
+epoch finish in 613.59s, loss: 0.1976
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4910, 0.6467, 0.6485, 0.6476, 0.9086
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5514, 0.7048, 0.7170, 0.7108, 0.9336
+rec_at_5: 0.6731
+prec_at_5: 0.6537
+rec_at_8: 0.8103
+prec_at_8: 0.5232
+rec_at_15: 0.9354
+prec_at_15: 0.3393
+
+evaluation finish in 73.19s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4882, 0.6436, 0.6546, 0.6490, 0.9057
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5490, 0.6986, 0.7194, 0.7088, 0.9312
+rec_at_5: 0.6617
+prec_at_5: 0.6580
+rec_at_8: 0.8008
+prec_at_8: 0.5312
+rec_at_15: 0.9287
+prec_at_15: 0.3468
+
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+Training model at depth 2:
+EPOCH 0
+epoch finish in 615.99s, loss: 0.1884
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5056, 0.6181, 0.7017, 0.6572, 0.9141
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5555, 0.6766, 0.7563, 0.7142, 0.9376
+rec_at_5: 0.6795
+prec_at_5: 0.6591
+rec_at_8: 0.8146
+prec_at_8: 0.5257
+rec_at_15: 0.9394
+prec_at_15: 0.3409
+
+evaluation finish in 78.21s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 1
+epoch finish in 609.10s, loss: 0.1793
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5098, 0.6486, 0.6895, 0.6684, 0.9180
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5619, 0.7031, 0.7368, 0.7195, 0.9387
+rec_at_5: 0.6801
+prec_at_5: 0.6576
+rec_at_8: 0.8200
+prec_at_8: 0.5287
+rec_at_15: 0.9385
+prec_at_15: 0.3401
+
+evaluation finish in 71.92s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 2
+epoch finish in 604.52s, loss: 0.1724
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5122, 0.6555, 0.6902, 0.6724, 0.9198
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5570, 0.7030, 0.7284, 0.7155, 0.9377
+rec_at_5: 0.6824
+prec_at_5: 0.6586
+rec_at_8: 0.8181
+prec_at_8: 0.5261
+rec_at_15: 0.9379
+prec_at_15: 0.3392
+
+evaluation finish in 73.94s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 3
+epoch finish in 609.53s, loss: 0.1652
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5259, 0.6278, 0.7368, 0.6779, 0.9201
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5683, 0.6757, 0.7814, 0.7247, 0.9417
+rec_at_5: 0.6881
+prec_at_5: 0.6668
+rec_at_8: 0.8243
+prec_at_8: 0.5323
+rec_at_15: 0.9449
+prec_at_15: 0.3434
+
+evaluation finish in 72.03s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 4
+epoch finish in 601.53s, loss: 0.1588
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5380, 0.6600, 0.7230, 0.6901, 0.9207
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5735, 0.7032, 0.7567, 0.7290, 0.9396
+rec_at_5: 0.6816
+prec_at_5: 0.6613
+rec_at_8: 0.8207
+prec_at_8: 0.5312
+rec_at_15: 0.9411
+prec_at_15: 0.3413
+
+evaluation finish in 74.00s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5379, 0.6627, 0.7260, 0.6929, 0.9209
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5698, 0.6997, 0.7542, 0.7259, 0.9386
+rec_at_5: 0.6699
+prec_at_5: 0.6664
+rec_at_8: 0.8110
+prec_at_8: 0.5393
+rec_at_15: 0.9365
+prec_at_15: 0.3505
+
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+Training model at depth 3:
+EPOCH 0
+epoch finish in 609.28s, loss: 0.1585
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5018, 0.6233, 0.6895, 0.6547, 0.9116
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5372, 0.6630, 0.7390, 0.6989, 0.9355
+rec_at_5: 0.6486
+prec_at_5: 0.6523
+rec_at_8: 0.7872
+prec_at_8: 0.5283
+rec_at_15: 0.9171
+prec_at_15: 0.3455
+
+evaluation finish in 71.99s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 1
+epoch finish in 605.92s, loss: 0.1474
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5152, 0.6515, 0.6872, 0.6689, 0.9144
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5527, 0.6951, 0.7297, 0.7120, 0.9366
+rec_at_5: 0.6491
+prec_at_5: 0.6570
+rec_at_8: 0.7917
+prec_at_8: 0.5330
+rec_at_15: 0.9187
+prec_at_15: 0.3474
+
+evaluation finish in 71.72s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 2
+epoch finish in 610.77s, loss: 0.1404
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5163, 0.6631, 0.6778, 0.6704, 0.9153
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5541, 0.7024, 0.7241, 0.7131, 0.9383
+rec_at_5: 0.6586
+prec_at_5: 0.6628
+rec_at_8: 0.7970
+prec_at_8: 0.5364
+rec_at_15: 0.9195
+prec_at_15: 0.3476
+
+evaluation finish in 71.04s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 3
+epoch finish in 600.77s, loss: 0.1356
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5196, 0.6758, 0.6723, 0.6740, 0.9143
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5596, 0.7086, 0.7269, 0.7176, 0.9375
+rec_at_5: 0.6615
+prec_at_5: 0.6659
+rec_at_8: 0.7991
+prec_at_8: 0.5372
+rec_at_15: 0.9149
+prec_at_15: 0.3466
+
+evaluation finish in 71.55s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 4
+epoch finish in 612.55s, loss: 0.1306
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5153, 0.6350, 0.7055, 0.6684, 0.9140
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5462, 0.6681, 0.7496, 0.7065, 0.9382
+rec_at_5: 0.6564
+prec_at_5: 0.6584
+rec_at_8: 0.7973
+prec_at_8: 0.5359
+rec_at_15: 0.9162
+prec_at_15: 0.3466
+
+evaluation finish in 72.59s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 5
+epoch finish in 616.22s, loss: 0.1256
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5162, 0.6599, 0.6757, 0.6677, 0.9118
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5503, 0.6997, 0.7205, 0.7100, 0.9358
+rec_at_5: 0.6545
+prec_at_5: 0.6575
+rec_at_8: 0.7925
+prec_at_8: 0.5326
+rec_at_15: 0.9171
+prec_at_15: 0.3468
+
+evaluation finish in 70.12s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 6
+epoch finish in 604.99s, loss: 0.1213
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5131, 0.6620, 0.6688, 0.6654, 0.9108
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5484, 0.6984, 0.7186, 0.7083, 0.9341
+rec_at_5: 0.6525
+prec_at_5: 0.6586
+rec_at_8: 0.7922
+prec_at_8: 0.5327
+rec_at_15: 0.9092
+prec_at_15: 0.3445
+
+evaluation finish in 74.55s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 7
+epoch finish in 606.95s, loss: 0.1162
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5168, 0.6437, 0.6927, 0.6673, 0.9104
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5500, 0.6853, 0.7358, 0.7096, 0.9341
+rec_at_5: 0.6508
+prec_at_5: 0.6581
+rec_at_8: 0.7895
+prec_at_8: 0.5333
+rec_at_15: 0.9118
+prec_at_15: 0.3448
+
+evaluation finish in 71.69s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 8
+epoch finish in 599.77s, loss: 0.1118
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5136, 0.6358, 0.6954, 0.6643, 0.9095
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5421, 0.6707, 0.7387, 0.7031, 0.9326
+rec_at_5: 0.6425
+prec_at_5: 0.6497
+rec_at_8: 0.7880
+prec_at_8: 0.5309
+rec_at_15: 0.9110
+prec_at_15: 0.3449
+
+evaluation finish in 71.67s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 9
+epoch finish in 603.66s, loss: 0.1067
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5045, 0.6333, 0.6907, 0.6608, 0.9095
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5336, 0.6623, 0.7331, 0.6959, 0.9323
+rec_at_5: 0.6426
+prec_at_5: 0.6468
+rec_at_8: 0.7844
+prec_at_8: 0.5266
+rec_at_15: 0.9100
+prec_at_15: 0.3443
+
+evaluation finish in 74.33s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.5040, 0.6309, 0.6919, 0.6600, 0.9094
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5355, 0.6628, 0.7360, 0.6975, 0.9322
+rec_at_5: 0.6340
+prec_at_5: 0.6482
+rec_at_8: 0.7727
+prec_at_8: 0.5308
+rec_at_15: 0.9091
+prec_at_15: 0.3540
+
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+Training model at depth 4:
+EPOCH 0
+epoch finish in 621.67s, loss: 0.1142
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4875, 0.6179, 0.6656, 0.6409, 0.9064
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5221, 0.6603, 0.7138, 0.6860, 0.9305
+rec_at_5: 0.6343
+prec_at_5: 0.6418
+rec_at_8: 0.7694
+prec_at_8: 0.5193
+rec_at_15: 0.8971
+prec_at_15: 0.3415
+
+evaluation finish in 72.46s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 1
+epoch finish in 612.16s, loss: 0.1072
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4840, 0.6249, 0.6505, 0.6375, 0.9053
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5223, 0.6698, 0.7033, 0.6862, 0.9289
+rec_at_5: 0.6347
+prec_at_5: 0.6411
+rec_at_8: 0.7688
+prec_at_8: 0.5179
+rec_at_15: 0.8949
+prec_at_15: 0.3403
+
+evaluation finish in 72.31s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 2
+epoch finish in 617.28s, loss: 0.1029
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4843, 0.6050, 0.6771, 0.6390, 0.9033
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5158, 0.6425, 0.7235, 0.6806, 0.9255
+rec_at_5: 0.6294
+prec_at_5: 0.6375
+rec_at_8: 0.7609
+prec_at_8: 0.5145
+rec_at_15: 0.8873
+prec_at_15: 0.3381
+
+evaluation finish in 71.10s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 3
+epoch finish in 613.94s, loss: 0.0986
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4795, 0.5942, 0.6866, 0.6370, 0.9046
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5039, 0.6239, 0.7237, 0.6701, 0.9264
+rec_at_5: 0.6244
+prec_at_5: 0.6284
+rec_at_8: 0.7564
+prec_at_8: 0.5094
+rec_at_15: 0.8915
+prec_at_15: 0.3388
+
+evaluation finish in 71.91s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 4
+epoch finish in 605.48s, loss: 0.0946
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4921, 0.6286, 0.6617, 0.6447, 0.9044
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5205, 0.6655, 0.7049, 0.6847, 0.9276
+rec_at_5: 0.6305
+prec_at_5: 0.6380
+rec_at_8: 0.7667
+prec_at_8: 0.5180
+rec_at_15: 0.8899
+prec_at_15: 0.3396
+
+evaluation finish in 71.24s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 5
+epoch finish in 611.93s, loss: 0.0912
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4808, 0.6122, 0.6631, 0.6366, 0.9030
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5101, 0.6469, 0.7069, 0.6756, 0.9236
+rec_at_5: 0.6297
+prec_at_5: 0.6347
+rec_at_8: 0.7572
+prec_at_8: 0.5112
+rec_at_15: 0.8858
+prec_at_15: 0.3372
+
+evaluation finish in 71.24s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 6
+epoch finish in 607.98s, loss: 0.0874
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4800, 0.6003, 0.6703, 0.6334, 0.8995
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5016, 0.6335, 0.7067, 0.6681, 0.9211
+rec_at_5: 0.6158
+prec_at_5: 0.6236
+rec_at_8: 0.7502
+prec_at_8: 0.5071
+rec_at_15: 0.8821
+prec_at_15: 0.3363
+
+evaluation finish in 72.94s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 7
+epoch finish in 609.41s, loss: 0.0839
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4749, 0.5926, 0.6766, 0.6318, 0.9007
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4997, 0.6268, 0.7113, 0.6664, 0.9221
+rec_at_5: 0.6225
+prec_at_5: 0.6258
+rec_at_8: 0.7550
+prec_at_8: 0.5086
+rec_at_15: 0.8830
+prec_at_15: 0.3367
+
+evaluation finish in 72.48s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 8
+epoch finish in 620.36s, loss: 0.0803
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4634, 0.5900, 0.6602, 0.6231, 0.8975
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4859, 0.6233, 0.6879, 0.6540, 0.9160
+rec_at_5: 0.6088
+prec_at_5: 0.6160
+rec_at_8: 0.7456
+prec_at_8: 0.5021
+rec_at_15: 0.8740
+prec_at_15: 0.3332
+
+evaluation finish in 71.88s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 9
+epoch finish in 608.60s, loss: 0.0775
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4740, 0.5772, 0.6888, 0.6281, 0.8988
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4916, 0.6040, 0.7255, 0.6592, 0.9211
+rec_at_5: 0.6139
+prec_at_5: 0.6175
+rec_at_8: 0.7480
+prec_at_8: 0.5038
+rec_at_15: 0.8872
+prec_at_15: 0.3374
+
+evaluation finish in 76.74s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+EPOCH 10
+epoch finish in 636.56s, loss: 0.0747
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4847, 0.6068, 0.6719, 0.6377, 0.8970
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5067, 0.6386, 0.7104, 0.6726, 0.9203
+rec_at_5: 0.6200
+prec_at_5: 0.6277
+rec_at_8: 0.7547
+prec_at_8: 0.5095
+rec_at_15: 0.8844
+prec_at_15: 0.3369
+
+evaluation finish in 79.59s
+saved metrics, params, model to directory ./models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+prec_at_8 hasn't improved in 10 epochs, early stopping...
+loading pretrained embeddings from ./data/mimic3/processed_full_100.embed
+adding unk embedding
+single
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4875, 0.6179, 0.6656, 0.6409, 0.9064
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5221, 0.6603, 0.7138, 0.6860, 0.9305
+rec_at_5: 0.6343
+prec_at_5: 0.6418
+rec_at_8: 0.7694
+prec_at_8: 0.5193
+rec_at_15: 0.8971
+prec_at_15: 0.3415
+
+evaluation finish in 73.23s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4829, 0.6140, 0.6612, 0.6367, 0.9050
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5202, 0.6597, 0.7110, 0.6844, 0.9298
+rec_at_5: 0.6225
+prec_at_5: 0.6416
+rec_at_8: 0.7599
+prec_at_8: 0.5242
+rec_at_15: 0.8925
+prec_at_15: 0.3491
+
+saved metrics, params, model to directory c:\Python\dlh\HiCu-ICD-main\models\RACReader_HierarchicalHyperbolic_Apr_18_22_42_53
+
+LAAT:
+
+Training model at depth 0:
+EPOCH 0
+c:\Python\dlh\HiCu-ICD-main\utils\train_test.py:31: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  C:\cb\pytorch_1000000000000\work\torch\csrc\utils\tensor_new.cpp:210.)
+  inputs_id, labels = torch.LongTensor(inputs_id), torch.FloatTensor(labels[cur_depth])
+epoch finish in 1290.36s, loss: 0.4673
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.1893, 0.2489, 0.2997, 0.2719, 0.6844
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3943, 0.5888, 0.5442, 0.5656, 0.7993
+rec_at_5: 0.6415
+prec_at_5: 0.5170
+rec_at_8: 0.8437
+prec_at_8: 0.4311
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 336.05s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 1
+epoch finish in 1283.29s, loss: 0.4096
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2306, 0.4024, 0.3110, 0.3508, 0.7241
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4315, 0.6810, 0.5408, 0.6029, 0.8289
+rec_at_5: 0.6794
+prec_at_5: 0.5373
+rec_at_8: 0.8773
+prec_at_8: 0.4398
+rec_at_15: 1.0000
+prec_at_15: 0.2922
+
+evaluation finish in 335.95s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2319, 0.3462, 0.3137, 0.3292, 0.7197
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4349, 0.6829, 0.5449, 0.6061, 0.8300
+rec_at_5: 0.6913
+prec_at_5: 0.5511
+rec_at_8: 0.8807
+prec_at_8: 0.4498
+rec_at_15: 1.0000
+prec_at_15: 0.2974
+
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+Training model at depth 1:
+EPOCH 0
+epoch finish in 1349.66s, loss: 0.3099
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.1171, 0.2506, 0.1542, 0.1909, 0.7436
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2067, 0.5819, 0.2427, 0.3425, 0.8050
+rec_at_5: 0.4059
+prec_at_5: 0.4233
+rec_at_8: 0.5436
+prec_at_8: 0.3605
+rec_at_15: 0.7530
+prec_at_15: 0.2708
+
+evaluation finish in 339.93s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 1
+epoch finish in 1325.12s, loss: 0.2907
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.1535, 0.3513, 0.2116, 0.2641, 0.7816
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.2666, 0.6215, 0.3183, 0.4210, 0.8259
+rec_at_5: 0.4444
+prec_at_5: 0.4573
+rec_at_8: 0.5802
+prec_at_8: 0.3827
+rec_at_15: 0.7760
+prec_at_15: 0.2804
+
+evaluation finish in 337.65s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 2
+epoch finish in 1308.24s, loss: 0.2737
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2043, 0.4165, 0.2519, 0.3139, 0.8066
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3160, 0.7094, 0.3630, 0.4802, 0.8592
+rec_at_5: 0.5175
+prec_at_5: 0.5205
+rec_at_8: 0.6565
+prec_at_8: 0.4240
+rec_at_15: 0.8352
+prec_at_15: 0.2991
+
+evaluation finish in 344.59s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2108, 0.4318, 0.2540, 0.3199, 0.8037
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3129, 0.7241, 0.3552, 0.4766, 0.8588
+rec_at_5: 0.5128
+prec_at_5: 0.5272
+rec_at_8: 0.6552
+prec_at_8: 0.4335
+rec_at_15: 0.8390
+prec_at_15: 0.3089
+
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+Training model at depth 2:
+EPOCH 0
+epoch finish in 1335.98s, loss: 0.2585
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2540, 0.4707, 0.2930, 0.3612, 0.8329
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.3581, 0.7716, 0.4005, 0.5273, 0.8800
+rec_at_5: 0.5415
+prec_at_5: 0.5532
+rec_at_8: 0.6864
+prec_at_8: 0.4505
+rec_at_15: 0.8585
+prec_at_15: 0.3085
+
+evaluation finish in 347.81s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 1
+epoch finish in 1307.42s, loss: 0.2376
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.2942, 0.5840, 0.3417, 0.4311, 0.8515
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4055, 0.7825, 0.4569, 0.5770, 0.8958
+rec_at_5: 0.5828
+prec_at_5: 0.5884
+rec_at_8: 0.7255
+prec_at_8: 0.4746
+rec_at_15: 0.8872
+prec_at_15: 0.3189
+
+evaluation finish in 345.58s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 2
+epoch finish in 1344.69s, loss: 0.2257
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3542, 0.6023, 0.4106, 0.4883, 0.8682
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4566, 0.7954, 0.5174, 0.6269, 0.9107
+rec_at_5: 0.6146
+prec_at_5: 0.6137
+rec_at_8: 0.7589
+prec_at_8: 0.4959
+rec_at_15: 0.9070
+prec_at_15: 0.3266
+
+evaluation finish in 356.27s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 3
+epoch finish in 1330.82s, loss: 0.2152
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3678, 0.6281, 0.4222, 0.5049, 0.8762
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4694, 0.8027, 0.5306, 0.6389, 0.9189
+rec_at_5: 0.6349
+prec_at_5: 0.6295
+rec_at_8: 0.7773
+prec_at_8: 0.5054
+rec_at_15: 0.9149
+prec_at_15: 0.3310
+
+evaluation finish in 345.17s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 4
+epoch finish in 1312.93s, loss: 0.2077
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3922, 0.6469, 0.4526, 0.5326, 0.8858
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4866, 0.8031, 0.5525, 0.6547, 0.9227
+rec_at_5: 0.6408
+prec_at_5: 0.6342
+rec_at_8: 0.7845
+prec_at_8: 0.5106
+rec_at_15: 0.9198
+prec_at_15: 0.3328
+
+evaluation finish in 348.01s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3818, 0.6405, 0.4408, 0.5222, 0.8838
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4766, 0.7990, 0.5415, 0.6455, 0.9207
+rec_at_5: 0.6388
+prec_at_5: 0.6383
+rec_at_8: 0.7796
+prec_at_8: 0.5176
+rec_at_15: 0.9158
+prec_at_15: 0.3409
+
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+Training model at depth 3:
+EPOCH 0
+epoch finish in 1313.11s, loss: 0.2020
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3677, 0.5944, 0.4327, 0.5008, 0.8794
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4564, 0.7621, 0.5323, 0.6268, 0.9200
+rec_at_5: 0.6023
+prec_at_5: 0.6195
+rec_at_8: 0.7446
+prec_at_8: 0.5033
+rec_at_15: 0.8884
+prec_at_15: 0.3341
+
+evaluation finish in 346.01s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 1
+epoch finish in 1358.45s, loss: 0.1898
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.3822, 0.6369, 0.4429, 0.5225, 0.8877
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4651, 0.7805, 0.5351, 0.6349, 0.9253
+rec_at_5: 0.6235
+prec_at_5: 0.6329
+rec_at_8: 0.7628
+prec_at_8: 0.5134
+rec_at_15: 0.8952
+prec_at_15: 0.3374
+
+evaluation finish in 347.87s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 2
+epoch finish in 1303.10s, loss: 0.1830
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4022, 0.6616, 0.4701, 0.5496, 0.8925
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4699, 0.7780, 0.5426, 0.6393, 0.9260
+rec_at_5: 0.6218
+prec_at_5: 0.6336
+rec_at_8: 0.7681
+prec_at_8: 0.5159
+rec_at_15: 0.9007
+prec_at_15: 0.3391
+
+evaluation finish in 343.75s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 3
+epoch finish in 1331.03s, loss: 0.1778
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4352, 0.6451, 0.5117, 0.5707, 0.8965
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5005, 0.7734, 0.5865, 0.6671, 0.9309
+rec_at_5: 0.6361
+prec_at_5: 0.6451
+rec_at_8: 0.7776
+prec_at_8: 0.5230
+rec_at_15: 0.9075
+prec_at_15: 0.3424
+
+evaluation finish in 343.19s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 4
+epoch finish in 1310.84s, loss: 0.1738
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4452, 0.7009, 0.5288, 0.6028, 0.9001
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5076, 0.7624, 0.6031, 0.6734, 0.9330
+rec_at_5: 0.6415
+prec_at_5: 0.6483
+rec_at_8: 0.7760
+prec_at_8: 0.5219
+rec_at_15: 0.9108
+prec_at_15: 0.3431
+
+evaluation finish in 342.07s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 5
+epoch finish in 1329.66s, loss: 0.1696
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4379, 0.7166, 0.5112, 0.5967, 0.9030
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4977, 0.7818, 0.5779, 0.6646, 0.9347
+rec_at_5: 0.6457
+prec_at_5: 0.6500
+rec_at_8: 0.7803
+prec_at_8: 0.5251
+rec_at_15: 0.9108
+prec_at_15: 0.3441
+
+evaluation finish in 353.24s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 6
+epoch finish in 1295.71s, loss: 0.1656
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4481, 0.7036, 0.5267, 0.6024, 0.9051
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5037, 0.7757, 0.5896, 0.6700, 0.9348
+rec_at_5: 0.6422
+prec_at_5: 0.6495
+rec_at_8: 0.7797
+prec_at_8: 0.5257
+rec_at_15: 0.9129
+prec_at_15: 0.3446
+
+evaluation finish in 344.79s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 7
+epoch finish in 1307.22s, loss: 0.1620
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4716, 0.6772, 0.5812, 0.6256, 0.9057
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5229, 0.7411, 0.6398, 0.6867, 0.9339
+rec_at_5: 0.6420
+prec_at_5: 0.6490
+rec_at_8: 0.7825
+prec_at_8: 0.5269
+rec_at_15: 0.9105
+prec_at_15: 0.3443
+
+evaluation finish in 342.62s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 8
+epoch finish in 1307.44s, loss: 0.1589
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4705, 0.7195, 0.5608, 0.6303, 0.9069
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5238, 0.7631, 0.6255, 0.6875, 0.9357
+rec_at_5: 0.6462
+prec_at_5: 0.6500
+rec_at_8: 0.7847
+prec_at_8: 0.5288
+rec_at_15: 0.9154
+prec_at_15: 0.3460
+
+evaluation finish in 342.05s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 9
+epoch finish in 1314.07s, loss: 0.1552
+last epoch: testing on dev and test sets
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4833, 0.7057, 0.5923, 0.6441, 0.9070
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5322, 0.7429, 0.6523, 0.6947, 0.9362
+rec_at_5: 0.6420
+prec_at_5: 0.6507
+rec_at_8: 0.7864
+prec_at_8: 0.5292
+rec_at_15: 0.9139
+prec_at_15: 0.3456
+
+evaluation finish in 356.65s
+file for evaluation: ./data/mimic3/test_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4778, 0.6748, 0.5904, 0.6298, 0.9048
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.5254, 0.7366, 0.6469, 0.6889, 0.9342
+rec_at_5: 0.6374
+prec_at_5: 0.6554
+rec_at_8: 0.7808
+prec_at_8: 0.5374
+rec_at_15: 0.9107
+prec_at_15: 0.3537
+
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+Training model at depth 4:
+EPOCH 0
+epoch finish in 1336.52s, loss: 0.1622
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4378, 0.6955, 0.5266, 0.5994, 0.9062
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4948, 0.7465, 0.5947, 0.6620, 0.9318
+rec_at_5: 0.6296
+prec_at_5: 0.6367
+rec_at_8: 0.7677
+prec_at_8: 0.5161
+rec_at_15: 0.8994
+prec_at_15: 0.3415
+
+evaluation finish in 347.77s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 1
+epoch finish in 1338.60s, loss: 0.1549
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4379, 0.6884, 0.5267, 0.5968, 0.9049
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4905, 0.7447, 0.5897, 0.6582, 0.9316
+rec_at_5: 0.6303
+prec_at_5: 0.6376
+rec_at_8: 0.7637
+prec_at_8: 0.5150
+rec_at_15: 0.8988
+prec_at_15: 0.3405
+
+evaluation finish in 347.70s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 2
+epoch finish in 1335.96s, loss: 0.1515
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4441, 0.6889, 0.5413, 0.6063, 0.9057
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4940, 0.7364, 0.6001, 0.6613, 0.9316
+rec_at_5: 0.6285
+prec_at_5: 0.6356
+rec_at_8: 0.7634
+prec_at_8: 0.5137
+rec_at_15: 0.8987
+prec_at_15: 0.3413
+
+evaluation finish in 347.46s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 3
+epoch finish in 1301.17s, loss: 0.1480
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4467, 0.6703, 0.5545, 0.6069, 0.9063
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4948, 0.7228, 0.6107, 0.6620, 0.9315
+rec_at_5: 0.6277
+prec_at_5: 0.6362
+rec_at_8: 0.7589
+prec_at_8: 0.5122
+rec_at_15: 0.8987
+prec_at_15: 0.3403
+
+evaluation finish in 339.08s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
+EPOCH 4
+epoch finish in 1296.19s, loss: 0.1445
+file for evaluation: ./data/mimic3/dev_50.csv
+
+[MACRO] accuracy, precision, recall, f-measure, AUC
+0.4245, 0.7234, 0.5025, 0.5930, 0.9047
+[MICRO] accuracy, precision, recall, f-measure, AUC
+0.4817, 0.7543, 0.5714, 0.6502, 0.9302
+rec_at_5: 0.6299
+prec_at_5: 0.6359
+rec_at_8: 0.7653
+prec_at_8: 0.5157
+rec_at_15: 0.8994
+prec_at_15: 0.3406
+
+evaluation finish in 336.39s
+saved metrics, params, model to directory ./models\LAAT_HierarchicalHyperbolic_Apr_19_06_45_14
+
