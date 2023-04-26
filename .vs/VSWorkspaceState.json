@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HiCu-ICD-main"
+    "\\HiCu-ICD-main",
+    "\\HiCu-ICD-main\\models"
   ],
+  "SelectedNode": "\\HiCu-ICD-main\\main.py",
   "PreviewInSolutionExplorer": false
 }
